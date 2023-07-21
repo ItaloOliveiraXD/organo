@@ -22,13 +22,20 @@ export const Formulario = (props) => {
 
 
     const aoSalvar = (evento) => {
-        evento.preventDefault()
+        evento.preventDefault();
+        
         props.aoColaboradorCadastrado({
             nome,
             cargo,
             imagem,
             time
         })
+
+        setNome('');
+        setCargo('');
+        setImagem('');
+        setTime('');
+
     }
     return (
         <section className='formulario'>
@@ -50,7 +57,7 @@ export const Formulario = (props) => {
                 />
                 <CampoTexto 
                     label="Imagem" 
-                    placeholder="Digite o endereço de sua imagem."
+                    placeholder="Digite a url do seu perfil Github.png"
                     valor={imagem}
                     aoAlterado={ valor => setImagem(valor)}
                 />
