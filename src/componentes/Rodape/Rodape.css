@@ -1,8 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 .rodape {
-    text-align: center;
     background-color: #6278F7;
+    background-image: url(./fundo.png);
 }
 
-.rodape img {
-    width: 60%;
+.rodape-itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.social-midia {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.rodape-itens h6 {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
 }
