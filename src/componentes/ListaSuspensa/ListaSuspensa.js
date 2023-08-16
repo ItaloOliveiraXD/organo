@@ -11,7 +11,7 @@ export const ListaSuspensa = (props) => {
             <label htmlFor="">{props.label}</label>
             <select name="" id="" required={props.obrigatorio} value={props.valor} onChange={aoModificado}>
                 <option value=""></option>
-                {props.itens.map(item => <option key={item}>{item}</option>)}
+                {props.itens.map(item => <option key={item.id}>{item.nome}</option>)}
             </select>
         </div>
     )
